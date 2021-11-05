@@ -4,12 +4,12 @@ import com.hawatel.monolithic.user.User;
 import com.hawatel.monolithic.user.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
-@Component
+@Configuration
 public class LoadUsers {
 
     @Bean
