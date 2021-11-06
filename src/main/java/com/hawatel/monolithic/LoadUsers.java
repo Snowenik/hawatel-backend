@@ -12,8 +12,9 @@ import java.util.ArrayList;
 @Configuration
 public class LoadUsers {
 
+
     @Bean
-    public CommandLineRunner loadUsers(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+    public CommandLineRunner initializeUsers(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         return args -> {
             User user = new User();
             user.setFirstName("marek123");
@@ -32,7 +33,9 @@ public class LoadUsers {
             secondUser.setProductList(new ArrayList<>());
             secondUser.setOperationList(new ArrayList<>());
             userRepository.save(secondUser);
+
         };
     }
+
 
 }

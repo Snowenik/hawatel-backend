@@ -1,6 +1,7 @@
 ## Konfiguracja i uruchomienie
 
 - API działa na `localhost:8080/api`
+- Należy utworzyć bazę danych o nazwie `hawatel` (lub zmienic nazwe w `application.properties`)
 - Konfiguracja PostgreSQL znajduje się w `/src/main/resources/application.properties`
 - Username dla bazy danych jest ustawiony(domyślny) jako `postgres`, hasło: `admin`
 - Po uruchomieniu aplikacji, klasa `/src/main/java/com/hawatel/monolithic/LoadUsers.java` tworzy 2 użytkowników:
